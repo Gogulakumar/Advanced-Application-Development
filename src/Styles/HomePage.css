@@ -1,0 +1,64 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 17px;
+  position: fixed;
+  width: 100%;
+  margin-left: -25px;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Align items vertically in the flex container */
+  justify-content: space-between; /* Distribute items along the container */
+}
+
+.navbar-heading {
+  color: #fff;
+  margin-left: 90px; /* Adjust margin as needed */
+  font-size: 26px; /* Adjust font size for the heading */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 25px; /* Adjust margin to move items a little more to the left */
+}
+
+li a {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  padding: 15px 25px; /* Increase padding for larger buttons */
+  font-size: 18px; /* Increase font size */
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+  background-color: #fff;
+  color: #151515;
+}
+
+.home-container {
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #030303;
+  margin-top: -250px;
+  background-color: #54d7f1; /* Add background color for h2 */
+  padding: 10px; /* Add padding for better visibility */
+}
