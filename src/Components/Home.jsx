@@ -1,19 +1,11 @@
+import React from 'react';
+import './../Styles/Home.css';
+import Navbar from './Navbar';
 
-import './../Styles/HomePage.css';
-import {Link} from "react-router-dom"
-const HomePage = () => {
+const HomePageWithoutNavBar = () => {
   return (
     <div>
-      <nav className="navbar">
-        <h1 className="navbar-heading">QuantumQuest</h1>
-        <ul>
-          <li><button>Home</button></li>
-          <li><button>Courses</button></li>
-          <li><button>Enquiry</button></li>
-          <li><button>About</button></li>
-        </ul>
-      </nav>
-
+        <Navbar/>
       <div className="home-container">
         <div className="image-content">
           <img src="https://academicadvising-stamford.media.uconn.edu/wp-content/uploads/sites/1164/2023/10/Course-Registration-1.png" alt="Description" />
@@ -66,7 +58,7 @@ const HomePage = () => {
             <h3>Python</h3>
             <p>This course helps to learn the basic concepts of Photography.</p>
           </div>
-      </div>
+          </div>
       </div>
       {/* Footer Section */}
       <footer className="footer">
@@ -86,4 +78,5 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+
+export default HomePageWithoutNavBar;

@@ -1,8 +1,8 @@
 // LoginPage.jsx
 
 import { useState } from 'react';
-import './../Styles/LoginPage.css';
 import { Link } from 'react-router-dom';
+import './../Styles/LoginPage.css';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -32,32 +32,34 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div className="form-group">
-          <label htmlFor="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          {errors.username && <div className="error">{errors.username}</div>}
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {errors.password && <div className="error">{errors.password}</div>}
-        </div>
-        <button type="submit">Login</button>
-      </form>
-      <Link to="/home" className="login-link">Go to Home</Link>
+    <div className='base with-background'>
+      <div className="login-container">
+        <h2>Login</h2>
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            {errors.username && <div className="error">{errors.username}</div>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {errors.password && <div className="error">{errors.password}</div>}
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <Link to="/home" className="login-link">Go to Home</Link>
+      </div>
     </div>
   );
 };
