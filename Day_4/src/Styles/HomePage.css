@@ -1,0 +1,157 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin-bottom: 100px;/* Set minimum height to 100% of the viewport height */
+}
+
+.navbar {
+  background-color: #333;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-heading {
+  color: #fd0000;
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 15px;
+}
+
+li a {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+  background-color: #fff;
+  color: #151515;
+}
+
+.home-container {
+  flex: 1; /* Allow the container to grow and fill available space */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+}
+
+.image-content,
+.text-content {
+  width: 100%; /* Make both take up the full width */
+  box-sizing: border-box;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Social Media Icons Styles */
+.footer-links img {
+  width: 25px;
+  margin: 0 5px;
+}
+
+
+/* Style for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+/* Style for each grid item */
+.grid-item {
+  text-align: center;
+}
+
+/* Style for the grid images */
+.grid-item img {
+  max-width: 100%;
+  /* height: auto; */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle lift effect */
+}
+
+/* Style for the grid item text */
+.grid-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.grid-item p {
+  color: #777;
+}
+
+/* Style for the grid item 4 */
+.grid-item:nth-child(4) {
+  background-color:0 4px 8px rgba(0, 0, 0, 0.1); /* Change background color for grid item 4 */
+  width: 310px;
+  margin-left: 90px;
+}
+
+/* Style for the grid item 5 */
+.grid-item:nth-child(5) {
+  background-color:0 4px 8px rgba(0, 0, 0, 0.1); /* Change background color for grid item 5 */
+  width: 310px;
+  margin-left: 90px;
+  height: 300px;
+}
+
+/* Style for the grid item 6 */
+.grid-item:nth-child(6) {
+  background-color:0 4px 8px rgba(0, 0, 0, 0.1); /* Change background color for grid item 6 */
+  width: 310px;
+  margin-left:90px;
+}
+h2{
+  color: #fff;
+}
