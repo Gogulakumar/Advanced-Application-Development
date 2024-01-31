@@ -1,0 +1,14 @@
+/* PaymentForm.css */
+
+.payment-form-container {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
